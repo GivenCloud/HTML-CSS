@@ -1,0 +1,121 @@
+body {
+    background: #fff;
+    color: #4d4e53;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+#navbar header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navbar {
+    position: absolute;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li{
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    list-style: none;
+    margin: 0;
+}
+
+#navbar ul li:first-child {
+    border-top: 1px solid black;
+}
+
+#navbar ul li:hover {
+    background-color: #f0eded;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#main-doc {
+    position: fixed;
+    top: 0px;
+    left: 310px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll; 
+    height: 100%; 
+}
+
+#main-doc h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-doc header {
+    margin-top: 30px;
+    font-weight: bold;   
+    font-size: 1.5em;
+}
+
+#main-doc p {
+    margin-bottom: 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#primitives li{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    /* CSS code for mobile devices */
+    body {
+        font-size: 14px;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #main-doc {
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
